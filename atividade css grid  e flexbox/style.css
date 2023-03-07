@@ -1,0 +1,75 @@
+/* Style the body */
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 0;
+    background-color: #ffffff;
+  }
+  
+  /* Header/logo Title */
+  .header {
+    padding: 60px;
+    text-align: center;
+    background: #1292ce;
+    color: rgb(255, 255, 255);
+  }
+  
+  /* Style the top navigation bar */
+  .navbar {
+    display: flex;
+    background-color: #000000;
+  }
+  
+  /* Style the navigation bar links */
+  .navbar a {
+    color: rgb(255, 255, 255);
+    padding: 10px 16px;
+    text-decoration: none;
+    text-align: center;
+  }
+  
+  /* Change color on hover */
+  .navbar a:hover {
+    background-color: #ffffff;
+    color: rgb(0, 3, 197);
+  }
+  
+  /* Column container */
+  .row {  
+    display: flex;
+    flex-wrap: wrap;
+   
+  }
+  
+  /* Create two unequal columns that sits next to each other */
+  /* Sidebar/left column */
+  .side {
+    flex: 25%;
+    background-color: #ffffff;
+    padding: 15px;
+  }
+  
+  /* Main column */
+  .main {
+    flex: 70%;
+    background-color: rgb(255, 253, 253);
+    padding: 20px;
+   
+    
+  }
+  
+ 
+  
+  /* rodape */
+  .footer {
+    padding: 10px;
+    text-align: center;
+    background: #ddd;
+    
+  }
+  
+  /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 500px) {
+    .row, .navbar {   
+      flex-direction: column;
+    }
+  }
